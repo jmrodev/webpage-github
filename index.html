@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto 166 - Class Links</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "aside main"
+                "footer footer";
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr 3fr;
+            gap: 10px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+
+        main {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Instituto 166 - Class Links</h1>
+    </header>
+    <aside>
+        <h2>Additional Links</h2>
+        <ul>
+            <li><a href="#">Institute Website</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </aside>
+    <main>
+        <div class="card">
+            <h3>Class 1</h3>
+            <p><a href="#">Link to Class 1</a></p>
+        </div>
+        <div class="card">
+            <h3>Class 2</h3>
+            <p><a href="#">Link to Class 2</a></p>
+        </div>
+        <!-- Add more cards as needed -->
+    </main>
+    <footer>
+        <p>&copy; 2023 Instituto 166</p>
+    </footer>
+</body>
+
+</html>
