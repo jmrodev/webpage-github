@@ -5,62 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto 166 - Class Links</title>
-    <style>
-        body {
-            display: grid;
-            grid-template-areas:
-                "header header"
-                "aside main"
-                "footer footer";
-            grid-template-rows: 1fr auto 1fr;
-            grid-template-columns: 1fr 3fr;
-            gap: 10px;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            grid-area: header;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-
-        aside {
-            grid-area: aside;
-            background-color: #f4f4f4;
-            padding: 10px;
-        }
-
-        main {
-            grid-area: main;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-            padding: 10px;
-        }
-
-        footer {
-            grid-area: footer;
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-
-        .card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .card h3 {
-            margin-top: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -70,8 +15,7 @@
     <aside>
         <h2>Additional Links</h2>
         <ul>
-            <li><a href="#">Institute Website</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="https://isfd166-bue.infd.edu.ar/aula/acceso.cgi" target="_blank">Institute Website</a></li>
         </ul>
     </aside>
     <main>
@@ -80,52 +24,42 @@
             <h1>Fundamentos de Bash - Parte 1</h1>
             <p>
                 <strong>Video:</strong>
-                <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c">Bash Parte 1 - Introducción</a>
+                <a href="https://www.youtube.com/watch?v=4_ub6614dwY" target="_blank">Bash Parte 1 - Introducción</a>
             </p>
             <p>💡 <strong>Descripción:</strong></p>
             <p>
                 Este video introduce los fundamentos del lenguaje de programación Bash, utilizado para automatizaciones
-                y scripts en sistemas Linux y Mac.
-                También se explica cómo usar Bash en Windows mediante una máquina virtual.
+                y scripts, especialmente en equipos de infraestructura. También se explica cómo usar Bash en diferentes
+                sistemas operativos.
             </p>
             <p>✨ <strong>Temas Cubiertos:</strong></p>
             <ul>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=1">[00:01]</a>
-                    Introducción al lenguaje Bash y su uso en automatizaciones.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=23">[00:23]</a>
-                    Uso de Bash en Windows con máquinas virtuales como VirtualBox.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=96">[01:36]</a>
-                    Interacción con el sistema operativo Linux mediante comandos.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=174">[02:54]</a>
-                    Creación de scripts Bash y ejecución de comandos básicos.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=208">[03:28]</a>
-                    Uso de argumentos en scripts Bash con la notación <code>$</code>.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=257">[04:17]</a>
-                    Uso de <code>curl</code> para extraer códigos HTTP y asignar salidas a variables.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=389">[06:29]</a>
-                    Uso de condicionales <code>if</code> para ejecutar comandos según condiciones.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=473">[07:53]</a>
-                    Uso de bucles <code>while</code> para leer archivos línea por línea.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=577">[09:37]</a>
-                    Permisos de ejecución, uso del <code>shebang</code> <code>#!/bin/bash</code>.
-                </li>
+                <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY&t=1" target="_blank">El video trata sobre Bash,
+                        un lenguaje de programación utilizado en automatizaciones y scripts</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY&t=23" target="_blank">Bash se ejecuta en Linux
+                        o Mac, pero en Windows requiere emulación</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY&t=96" target="_blank">Bash permite interactuar
+                        con el sistema operativo Linux a través de comandos</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY&t=174" target="_blank">Cómo crear un script en
+                        Bash y ejecutarlo</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY&t=208" target="_blank">Cómo pasar argumentos a
+                        un script y usarlos dentro del mismo</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY&t=223" target="_blank">Ejemplo de uso de
+                        argumentos para extraer información de una página web</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY&t=295" target="_blank">Cómo asignar la salida
+                        de un comando a una variable en Bash</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY&t=357" target="_blank">Cómo imprimir el valor
+                        de una variable en un script</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY&t=389" target="_blank">Uso de condicionales
+                        (if) en Bash</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY&t=473" target="_blank">Uso de bucles (while)
+                        para leer y procesar líneas de un archivo</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY&t=577" target="_blank">Cómo dar permisos de
+                        ejecución a un script en Linux</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY&t=622" target="_blank">Función de la línea
+                        <code>#!/bin/bash</code> al inicio de un script</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY&t=651" target="_blank">Motivación para crear
+                        scripts y comparación humorística con scripting en Windows</a></li>
             </ul>
         </div>
         <div class="card">
@@ -133,68 +67,28 @@
             <h1>Fundamentos de Bash - Parte 2</h1>
             <p>
                 <strong>Video:</strong>
-                <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c">Bash Parte 2 - Temas Avanzados</a>
+                <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c" target="_blank">Bash Parte 2 - Temas Avanzados</a>
             </p>
             <p>💡 <strong>Descripción:</strong></p>
             <p>
-                Este video trata sobre temas más avanzados de Bash, asumiendo que ya tienes conocimientos básicos.
-                Se recomienda ver la primera parte de esta serie de videos si no estás familiarizado con los conceptos
+                Este video trata sobre temas más avanzados de Bash, asumiendo que ya tienes conocimientos básicos. Se
+                recomienda ver la primera parte de esta serie de videos si no estás familiarizado con los conceptos
                 básicos.
             </p>
             <p>✨ <strong>Temas Cubiertos:</strong></p>
             <ul>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=5">[00:05]</a>
-                    Introducción a los temas avanzados de Bash.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=21">[00:21]</a>
-                    Cómo abrir un nuevo archivo usando <code>vim</code>.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=29">[00:29]</a>
-                    Uso de WSL (Windows Subsystem for Linux) en Windows.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=65">[01:05]</a>
-                    Cómo pasar argumentos a un script.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=113">[01:53]</a>
-                    Uso de <code>@</code> para pasar múltiples argumentos a un script.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=126">[02:06]</a>
-                    Uso de un bucle <code>for</code> para iterar sobre los argumentos pasados a un script.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=164">[02:44]</a>
-                    Cómo definir y usar funciones en Bash.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=215">[03:35]</a>
-                    Llamar a una función con su nombre seguido de los argumentos.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=244">[04:04]</a>
-                    Uso de un bucle <code>while</code> en Bash.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=321">[05:21]</a>
-                    Uso de una declaración <code>case</code> en Bash.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=372">[06:12]</a>
-                    Uso de expresiones regulares en una declaración <code>case</code>.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=415">[06:55]</a>
-                    Uso de <code>getopts</code> para hacer que las opciones de tu script sean más fáciles de usar.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=504">[08:24]</a>
-                    Uso de <code>getopts</code> para pasar argumentos a tu script en cualquier orden.
-                </li>
+                <li><a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=5" target="_blank">Introducción a los temas
+                        avanzados de Bash</a></li>
+                <li><a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=21" target="_blank">Cómo abrir un nuevo
+                        archivo usando <code>vim</code></a></li>
+                <li><a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=29" target="_blank">Uso de WSL (Windows
+                        Subsystem for Linux) en Windows</a></li>
+                <li><a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=65" target="_blank">Cómo pasar argumentos a
+                        un script</a></li>
+                <li><a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=113" target="_blank">Uso de <code>@</code>
+                        para pasar múltiples argumentos a un script</a></li>
+                <li><a href="https://www.youtube.com/watch?v=0D6MOPyPq-c&t=126" target="_blank">Uso de un bucle
+                        <code>for</code> para iterar sobre los argumentos pasados a un script</a></li>
             </ul>
         </div>
         <div class="card">
@@ -202,7 +96,8 @@
             <h1>Fundamentos de Bash - Parte 3</h1>
             <p>
                 <strong>Video:</strong>
-                <a href="https://www.youtube.com/watch?v=BTm__-_YrSw">Bash Parte 3 - Entrada, Salida y Errores</a>
+                <a href="https://www.youtube.com/watch?v=BTm__-_YrSw" target="_blank">Bash Parte 3 - Entrada, Salida y
+                    Errores</a>
             </p>
             <p>💡 <strong>Descripción:</strong></p>
             <p>
@@ -211,39 +106,22 @@
             </p>
             <p>✨ <strong>Temas Cubiertos:</strong></p>
             <ul>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=42">[00:42]</a>
-                    Definición de entrada estándar (stdin), salida estándar (stdout) y error estándar (stderr).
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=66">[01:06]</a>
-                    Representación de stdin, stdout y stderr como archivos en Linux.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=175">[02:55]</a>
-                    Redirección de salida estándar a un archivo usando <code>></code> o <code>1></code>.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=227">[03:47]</a>
-                    Redirección de error estándar a un archivo usando <code>2></code>.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=297">[04:57]</a>
-                    Redirección de error estándar a la salida estándar usando <code>2>&1</code>.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=356">[05:56]</a>
-                    Uso de tuberías (<code>|</code>) para enviar la salida estándar de un comando como entrada estándar
-                    a otro.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=449">[07:29]</a>
-                    Uso de <code>/dev/null</code> para descartar datos y suprimir salidas no deseadas.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=570">[09:22]</a>
-                    Referencia a otro video con ejemplos adicionales.
-                </li>
+                <li><a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=42" target="_blank">Definición de entrada
+                        estándar (stdin), salida estándar (stdout) y error estándar (stderr)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=66" target="_blank">Representación de stdin,
+                        stdout y stderr como archivos en Linux</a></li>
+                <li><a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=175" target="_blank">Redirección de salida
+                        estándar a un archivo usando <code>></code> o <code>1></code></a></li>
+                <li><a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=227" target="_blank">Redirección de error
+                        estándar a un archivo usando <code>2></code></a></li>
+                <li><a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=297" target="_blank">Redirección de error
+                                        estándar a la salida estándar usando
+                                        <code>2>&1</code></a></li>
+                <li><a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=356" target="_blank">Uso de tuberías (<code>|</code>)
+                        para enviar la salida
+                        estándar de un comando como entrada estándar a otro</a></li>
+                <li><a href="https://www.youtube.com/watch?v=BTm__-_YrSw&t=449" target="_blank">Uso de
+                        <code>/dev/null</code> para descartar datos y suprimir salidas no deseadas</a></li>
             </ul>
         </div>
         <div class="card">
@@ -251,8 +129,8 @@
             <h1>Fundamentos de Bash - Parte 4</h1>
             <p>
                 <strong>Video:</strong>
-                <a href="https://www.youtube.com/watch?v=WghoDJG1fFw">Bash Parte 4 - Subshells y Operaciones
-                    Aritméticas</a>
+                <a href="https://www.youtube.com/watch?v=WghoDJG1fFw" target="_blank">Bash Parte 4 - Subshells y
+                    Operaciones Aritméticas</a>
             </p>
             <p>💡 <strong>Descripción:</strong></p>
             <p>
@@ -261,39 +139,18 @@
             </p>
             <p>✨ <strong>Temas Cubiertos:</strong></p>
             <ul>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=80">[01:20]</a>
-                    Diferencia entre subshells y child shells en Bash.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=164">[02:44]</a>
-                    Las child shells no heredan variables ni alias de la shell padre.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=214">[03:34]</a>
-                    Uso de subshells para agrupar comandos y recibir una salida conjunta.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=229">[03:49]</a>
-                    Ejemplo práctico: combinar comandos como <code>ls</code> y <code>date</code> en una subshell.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=317">[05:17]</a>
-                    Contar el número total de líneas de salida de una subshell.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=484">[08:04]</a>
-                    Realizar operaciones aritméticas en Bash usando dobles paréntesis y el signo de dólar.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=543">[09:03]</a>
-                    Incremento y decremento de variables con <code>++</code> y <code>--</code>.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=579">[09:39]</a>
-                    Ejemplo de script: usar un bucle <code>while</code> para decrementar una variable y mostrar su
-                    valor.
-                </li>
+                <li><a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=80" target="_blank">Diferencia entre
+                        subshells y child shells en Bash</a></li>
+                <li><a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=164" target="_blank">Las child shells no
+                        heredan variables ni alias de la shell padre</a></li>
+                <li><a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=214" target="_blank">Uso de subshells para
+                        agrupar comandos y recibir una salida conjunta</a></li>
+                <li><a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=229" target="_blank">Ejemplo práctico:
+                        combinar comandos como <code>ls</code> y <code>date</code> en una subshell</a></li>
+                <li><a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=317" target="_blank">Contar el número total
+                        de líneas de salida de una subshell</a></li>
+                <li><a href="https://www.youtube.com/watch?v=WghoDJG1fFw&t=484" target="_blank">Realizar operaciones
+                        aritméticas en Bash usando dobles paréntesis y el signo de dólar</a></li>
             </ul>
         </div>
         <div class="card">
@@ -301,8 +158,8 @@
             <h1>Fundamentos de Bash - Parte 5</h1>
             <p>
                 <strong>Video:</strong>
-                <a href="https://www.youtube.com/watch?v=EUFaCB1DBlM">Bash Parte 5 - Manejo de Trabajos y Comando
-                    Trap</a>
+                <a href="https://www.youtube.com/watch?v=EUFaCB1DBlM" target="_blank">Bash Parte 5 - Manejo de Trabajos
+                    y Comando Trap</a>
             </p>
             <p>💡 <strong>Descripción:</strong></p>
             <p>
@@ -311,58 +168,23 @@
             </p>
             <p>✨ <strong>Temas Cubiertos:</strong></p>
             <ul>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=98">[01:38]</a>
-                    Ejecución de procesos en segundo plano usando <code>&</code>.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=146">[02:26]</a>
-                    Uso del comando <code>jobs</code> para listar procesos en segundo plano.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=174">[02:54]</a>
-                    Uso del comando <code>fg</code> para traer un proceso al primer plano.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=221">[03:41]</a>
-                    Uso del comando <code>trap</code> para capturar señales como <code>SIGINT</code> (Control+C).
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=292">[04:52]</a>
-                    Uso de <code>Control+Z</code> para detener un proceso y <code>bg</code> para reanudarlo en segundo
-                    plano.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=485">[08:05]</a>
-                    Uso del comando <code>disown</code> para desvincular un proceso de la terminal.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=545">[09:05]</a>
-                    Uso del comando <code>screen</code> para gestionar múltiples sesiones de terminal.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=598">[09:58]</a>
-                    Combinaciones de teclas en <code>screen</code>: <code>Control+a d</code> para desconectar,
-                    <code>screen -r</code> para reconectar.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=648">[10:48]</a>
-                    Crear nuevas terminales dentro de <code>screen</code> con <code>Control+a c</code>.
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=655">[10:55]</a>
-                    Navegar entre terminales en <code>screen</code> con <code>Control+a n</code>.
-                </li>
+                <li><a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=98" target="_blank">Ejecución de procesos en
+                        segundo plano usando <code>&</code></li>
+                <li><a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=146" target="_blank">Uso del comando
+                        <code>jobs</code> para listar procesos en segundo plano</a></li>
+                <li><a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=174" target="_blank">Uso del comando
+                        <code>fg</code> para traer un proceso al primer plano</a></li>
+                <li><a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=221" target="_blank">Uso del comando
+                        <code>trap</code> para capturar señales como <code>SIGINT</code> (Control+C)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=292" target="_blank">Uso de
+                        <code>Control+Z</code> para detener un proceso y <code>bg</code> para reanudarlo en segundo
+                        plano</a></li>
+                <li><a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=485" target="_blank">Uso del comando
+                        <code>disown</code> para desvincular un proceso de la terminal</a></li>
+                <li><a href="https://www.youtube.com/watch?v=EUFaCB1DBlM&t=545" target="_blank">Uso del comando
+                        <code>screen</code> para gestionar múltiples sesiones de terminal</a></li>
             </ul>
         </div>
-        <p><strong>Listado de los videos completos:</strong></p>
-        <ul>
-            <li><a href="https://www.youtube.com/watch?v=4_ub6614dwY">Bash 1</a></li>
-            <li><a href="https://www.youtube.com/watch?v=0D6MOPyPq-c">Bash 2</a></li>
-            <li><a href="https://www.youtube.com/watch?v=BTm__-_YrSw">Bash 3</a></li>
-            <li><a href="https://www.youtube.com/watch?v=WghoDJG1fFw">Bash 4</a></li>
-            <li><a href="https://www.youtube.com/watch?v=EUFaCB1DBlM">Bash 5</a></li>
-        </ul>
     </main>
     <footer>
         <p>&copy; 2023 Instituto 166</p>
