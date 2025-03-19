@@ -11,67 +11,70 @@
     /* Color de la sombra */
 }
 
-body {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "aside main main"
-        "footer footer footer";
-    grid-template-rows: 20vh auto 1fr;
-    grid-template-columns: 1fr 3fr;
-    gap: 10px;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    grid-area: header;
-    background-color: var(--bg-color-primary);
-    color: var(--text-color);
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-}
-
-aside {
-    grid-area: aside;
-    background-color: var(--bg-color-secundary);
-    padding: 10px;
-}
-
-main {
-    grid-area: main;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
-}
-footer {
-    grid-area: footer;
-    width: 100%; /* Asegura que ocupe todo el ancho */
-    background-color: var(--bg-color-primary); /* Usa el color principal */
-    color: var(--text-color); /* Usa el color del texto */
-    text-align: center;
-    padding: 15px; /* Aumenta el relleno para mejor visibilidad */
-    margin-top: 10px; /* Agrega un margen superior para separarlo del contenido anterior */
-    box-shadow: 0 -2px 5px var(--shadow-color); /* Agrega una sombra para destacarlo */
-    font-size: 1rem; /* Ajusta el tamaño del texto */
-}
-
-.card {
-    background-color: white;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    padding: 15px;
-    box-shadow: 0 2px 5px var(--shadow-color);
-}
-
-.card h3 {
-    margin-top: 0;
-}
-
-@media (min-width: 350px) {
+@media (min-width:768px){
     body {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "aside main main"
+            "footer footer footer";
+        grid-template-rows: 20vh auto 1fr;
+        grid-template-columns: 1fr 3fr;
+        gap: 10px;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        grid-area: header;
+        background-color: var(--bg-color-primary);
+        color: var(--text-color);
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    aside {
+        grid-area: aside;
+        background-color: var(--bg-color-secundary);
+        padding: 10px;
+    }
+
+    main {
+        grid-area: main;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+    footer {
+        grid-area: footer;
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        background-color: var(--bg-color-primary); /* Usa el color principal */
+        color: var(--text-color); /* Usa el color del texto */
+        text-align: center;
+        padding: 15px; /* Aumenta el relleno para mejor visibilidad */
+        margin-top: 10px; /* Agrega un margen superior para separarlo del contenido anterior */
+        box-shadow: 0 -2px 5px var(--shadow-color); /* Agrega una sombra para destacarlo */
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+    }
+
+    .card {
+        background-color: white;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: 0 2px 5px var(--shadow-color);
+    }
+
+    .card h3 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        display: grid;
         grid-template-areas:
             "header"
             "aside"
@@ -79,13 +82,116 @@ footer {
             "footer";
         grid-template-rows: auto auto 1fr auto; /* Ajusta las filas para incluir el aside arriba */
         grid-template-columns: 1fr; /* Una sola columna */
+        gap: 10px;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        grid-area: header;
+        background-color: var(--bg-color-primary);
+        color: var(--text-color);
+        text-align: center;
+        padding: 10px;
+        width: 100%;
     }
 
     aside {
-        text-align: center; /* Centra el contenido del aside */
+        grid-area: aside;
+        background-color: var(--bg-color-secundary);
+        padding: 10px;
     }
 
     main {
-        padding: 10px; /* Ajusta el espacio interno del main */
+        grid-area: main;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+    footer {
+        grid-area: footer;
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        background-color: var(--bg-color-primary); /* Usa el color principal */
+        color: var(--text-color); /* Usa el color del texto */
+        text-align: center;
+        padding: 15px; /* Aumenta el relleno para mejor visibilidad */
+        margin-top: 10px; /* Agrega un margen superior para separarlo del contenido anterior */
+        box-shadow: 0 -2px 5px var(--shadow-color); /* Agrega una sombra para destacarlo */
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+    }
+
+    .card {
+        background-color: white;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: 0 2px 5px var(--shadow-color);
+    }
+
+    .card h3 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 350px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "footer";
+        grid-template-rows: auto auto 1fr auto; /* Ajusta las filas para incluir el aside arriba */
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 10px;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        grid-area: header;
+        background-color: var(--bg-color-primary);
+        color: var(--text-color);
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    aside {
+        grid-area: aside;
+        background-color: var(--bg-color-secundary);
+        padding: 10px;
+    }
+
+    main {
+        grid-area: main;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+    }
+    footer {
+        grid-area: footer;
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        background-color: var(--bg-color-primary); /* Usa el color principal */
+        color: var(--text-color); /* Usa el color del texto */
+        text-align: center;
+        padding: 15px; /* Aumenta el relleno para mejor visibilidad */
+        margin-top: 10px; /* Agrega un margen superior para separarlo del contenido anterior */
+        box-shadow: 0 -2px 5px var(--shadow-color); /* Agrega una sombra para destacarlo */
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+    }
+
+    .card {
+        background-color: white;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        padding: 15px;
+        box-shadow: 0 2px 5px var(--shadow-color);
+    }
+
+    .card h3 {
+        margin-top: 0;
     }
 }
