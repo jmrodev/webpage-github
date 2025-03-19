@@ -69,3 +69,23 @@ footer {
 .card h3 {
     margin-top: 0;
 }
+
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+            "header"
+            "aside"
+            "main"
+            "footer";
+        grid-template-rows: auto auto 1fr auto; /* Ajusta las filas para incluir el aside arriba */
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+
+    aside {
+        text-align: center; /* Centra el contenido del aside */
+    }
+
+    main {
+        padding: 10px; /* Ajusta el espacio interno del main */
+    }
+}
