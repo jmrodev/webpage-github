@@ -1,9 +1,8 @@
 :root {
-  --bg-color-primary: #a8e6cf; /* Color verde pastel claro */
-  /* Color principal (verde) */
-  --bg-color-secundary: #dcedc1; /* Color verde pastel suave */
+  --bg-color-primary: #ffb3ba; /* Color pastel rosa */
+  --bg-color-secundary: #ffdfba; /* Color pastel naranja */
   --text-color: #4a4a4a; /* Color de texto gris oscuro */
-  --border-color: #c5e1a5; /* Color verde pastel para bordes */
+  --border-color: #ffc3a0; /* Color pastel melocotón */
   --shadow-color: rgba(0, 0, 0, 0.1); /* Color de sombra suave */
 }
 
