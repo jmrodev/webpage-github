@@ -1,7 +1,9 @@
 :root {
-    --bg-color-primary: #A8E6CF; /* Color verde pastel claro */
-    --bg-color-secundary: #DCEDC1; /* Color verde pastel suave */
-    --text-color: #4A4A4A; /* Color de texto gris oscuro */
+    --white-color: #fff; /* Color blanco */
+    --black-color: #000;
+    --bg-color-primary: #21773dc7; /* Color verde pastel claro */
+    --bg-color-secondary: #ffffff; /* Color verde pastel suave */
+    --text-color: #e6e2e2; /* Color de texto gris oscuro */
     --border-color: #C5E1A5; /* Color verde pastel para bordes */
     --shadow-color: rgba(0, 0, 0, 0.1); /* Color de sombra suave */
 }
@@ -12,7 +14,7 @@ body {
   gap: 10px;
   margin: 0;
   font-family: "Arial", sans-serif;
-  background-color: #faf3e0; /* Color de fondo suave */
+  background-color: var(--bg-color-primary);
   padding: 20px;
 }
 
@@ -28,7 +30,7 @@ header {
 
 aside {
   grid-area: aside;
-  background-color: var(--bg-color-secundary);
+  background-color: var(--bg-color-secondary);
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 2px 5px var(--shadow-color);
@@ -56,7 +58,7 @@ footer {
 }
 
 .card {
-  background-color: white;
+  background-color: var(--bg-color-secondary);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 20px;
@@ -71,10 +73,10 @@ footer {
 
 /* Estilos para secciones */
 section {
-  background-color: var(--bg-color-secundary);
+  background-color: var(--bg-color-secondary);
   border: 1px solid var(--border-color);
   border-radius: 10px;
-  padding: 15px;
+  padding: 2rem 7rem;
   margin-bottom: 20px;
   box-shadow: 0 2px 5px var(--shadow-color);
 }
