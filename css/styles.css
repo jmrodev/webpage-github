@@ -64,10 +64,6 @@ footer {
   transition: transform 0.2s;
 }
 
-.card:hover {
-  transform: scale(1.02); /* Efecto de hover */
-}
-
 .card h3 {
   margin-top: 0;
   color: var(--text-color);
