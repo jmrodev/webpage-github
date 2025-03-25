@@ -91,6 +91,17 @@ section p {
   line-height: 1.6; /* Espaciado entre líneas */
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+
+
 /* Estilos para pantallas grandes */
 @media (min-width: 768px) {
   body {
