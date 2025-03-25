@@ -1,11 +1,17 @@
 :root {
-    --white-color: #fff; /* Color blanco */
-    --black-color: #000;
-    --bg-color-primary: #21773dc7; /* Color verde pastel claro */
-    --bg-color-secondary: #ffffff; /* Color verde pastel suave */
-    --text-color: #e6e2e2; /* Color de texto gris oscuro */
-    --border-color: #C5E1A5; /* Color verde pastel para bordes */
-    --shadow-color: rgba(0, 0, 0, 0.1); /* Color de sombra suave */
+  --white-color: #fff;
+  /* Color blanco */
+  --black-color: #000;
+  --bg-color-primary: #21773dc7;
+  /* Color verde pastel claro */
+  --bg-color-secondary: #ffffff;
+  /* Color verde pastel suave */
+  --text-color: #e6e2e2;
+  /* Color de texto gris oscuro */
+  --border-color: #C5E1A5;
+  /* Color verde pastel para bordes */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  /* Color de sombra suave */
 }
 
 /* Estilos comunes */
@@ -82,24 +88,40 @@ section {
 }
 
 section h2 {
-  color: #388e3c; /* Color verde oscuro para h2 */
-  margin-bottom: 10px;
+  color: #388e3c;
+  /* Color verde oscuro para h2 */
+  margin:3rem 0 2rem 0;
 }
 
 section p {
-  color: #4a4a4a; /* Color de texto gris oscuro */
-  line-height: 1.6; /* Espaciado entre líneas */
+  color: #4a4a4a;
+  /* Color de texto gris oscuro */
+  line-height: 1.6;
+  /* Espaciado entre líneas */
 }
 
-ul {
+ul,
+ol {
+  margin: 2.5rem 2rem;
   padding: 0;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
 }
 
+section h1 {
+  margin-left: 1rem;
+}
 
+section h3 {
+  margin: 2rem 0 0 2rem;
+}
+
+section p {
+  margin-left: 3rem;
+}
 
 /* Estilos para pantallas grandes */
 @media (min-width: 768px) {
