@@ -1,9 +1,9 @@
 :root {
-  --bg-color-primary: #ffb3ba; /* Color pastel rosa */
-  --bg-color-secundary: #ffdfba; /* Color pastel naranja */
-  --text-color: #4a4a4a; /* Color de texto gris oscuro */
-  --border-color: #ffc3a0; /* Color pastel melocotón */
-  --shadow-color: rgba(0, 0, 0, 0.1); /* Color de sombra suave */
+    --bg-color-primary: #A8E6CF; /* Color verde pastel claro */
+    --bg-color-secundary: #DCEDC1; /* Color verde pastel suave */
+    --text-color: #4A4A4A; /* Color de texto gris oscuro */
+    --border-color: #C5E1A5; /* Color verde pastel para bordes */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Color de sombra suave */
 }
 
 /* Estilos comunes */
