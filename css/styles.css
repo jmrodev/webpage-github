@@ -1,10 +1,10 @@
 :root {
   --white-color: #fff;
   /* Color blanco */
-  --black-color: #000;
-  --bg-color-primary: #21773dc7;
+  --black-color: #d5ddd4;
+  --bg-color-primary: #698a74c7;
   /* Color verde pastel claro */
-  --bg-color-secondary: #ffffff;
+  --bg-color-secondary: #29362a;
   /* Color verde pastel suave */
   --text-color: #e6e2e2;
   /* Color de texto gris oscuro */
@@ -90,11 +90,8 @@ section {
 section h2 {
   color: #388e3c;
   /* Color verde oscuro para h2 */
-<<<<<<< HEAD
-  margin:3rem 0 2rem 0;
-=======
+  margin: 3rem 0 2rem 0;
   margin-bottom: 10px;
->>>>>>> update-styles
 }
 
 section p {
@@ -125,46 +122,6 @@ section h3 {
 
 section p {
   margin-left: 3rem;
-}
-
-/* Estilos para pantallas grandes */
-@media (min-width: 768px) {
-  body {
-    grid-template-areas:
-      "header header header"
-      "aside main main"
-      "footer footer footer";
-    grid-template-rows: auto auto 1fr;
-    grid-template-columns: 1fr 3fr;
-  }
-}
-
-/* Estilos para pantallas medianas */
-@media (max-width: 768px) {
-  body {
-    grid-template-areas:
-      "header"
-      "aside"
-      "main"
-      "footer";
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 350px) {
-  body {
-    grid-template-areas:
-      "header"
-      "aside"
-      "main"
-      "footer";
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-columns: 1fr;
-  }
-<<<<<<< HEAD
-=======
 }
 
 .iframe-pdf {
@@ -206,6 +163,9 @@ section p {
 
 /* Contenedor de los iframes */
 .iframe-container {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
   margin-top: 20px;
   display: flex;
   justify-content: center;
@@ -213,11 +173,68 @@ section p {
 }
 
 .iframe-pdf {
-  width: 90vw;
+  width: 60vw;
   height: 80vh;
   /* Ajustar altura para que no ocupe toda la pantalla */
   border: 1px solid var(--border-color);
   border-radius: 10px;
   box-shadow: 0 2px 10px var(--shadow-color);
->>>>>>> update-styles
+}
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color-primary);
+  width: 20vw;
+  height: 15vh;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+  background-color: var(--border-color);
+  color: var(--bg-color-primary);
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+  body {
+    grid-template-areas:
+      "header header header"
+      "aside main main"
+      "footer footer footer";
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (max-width: 768px) {
+  body {
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 350px) {
+  body {
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+  }
 }
