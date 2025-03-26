@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>Documents</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>Material de Análisis</h1>
+        <div class="document-buttons">
+            <button onclick="showIframe('iframe1')">Introducción</button>
+            <button onclick="showIframe('iframe2')">Introducción al Análisis y Diseño</button>
+            <button onclick="showIframe('iframe3')">Análisis Casos de Negocios</button>
+        </div>
+        <div class="iframe-container">
+            <iframe id="iframe1" class="iframe-pdf hidden" src="./docs/00_introduccion.pdf"></iframe>
+            <iframe id="iframe2" class="iframe-pdf hidden" src="./docs/01_introduccion_analisis_y_diseno.pdf"></iframe>
+            <iframe id="iframe3" class="iframe-pdf hidden" src="./docs/02_analisis_casos_negocios.pdf"></iframe>
+        </div>
+    </div>
+
+
+
+    <script src="../../js/documents.js"></script>
+</body>
+
+</html>
